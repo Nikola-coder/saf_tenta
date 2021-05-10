@@ -1,4 +1,9 @@
 <?php
+
+//Register Custom Post Types and Custom Taxonomies
+require_once ('inc/custom-post-types.php');
+require_once ('inc/custom-categories-taxonomies.php');
+require_once ('inc/custom-tags-taxonomies.php');
 /**
  * Bootscore functions and definitions
  *
