@@ -13,7 +13,7 @@
 // WooCommerce End
 
 // Load bundled AFC plugin
-require get_template_directory() . '/inc/afc-loader.php';
+require get_template_directory() . '/inc/acf-loader.php';
 
 // Register Nav Walker class_alias
 if ( ! function_exists( 'register_navwalker' ) ) :
