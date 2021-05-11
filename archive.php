@@ -1,4 +1,6 @@
 <?php
+
+get_template_part('template-parts/header-image');
 	/**
 	 * The template for displaying archive pages
 	 *

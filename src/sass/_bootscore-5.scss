@@ -1058,3 +1058,55 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 .form-select {
     -webkit-appearance: none;
 }
+
+#site-header {
+    position: relative;
+  }
+  
+  #site-header img {
+    min-height: 20vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  
+  #site-header .header-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #site-header .header-text-wrapper {
+    color: #0e0c0c;
+  }
+  
+  #site-header .header-text .header-subtitle {
+    margin-top: 1rem;
+  }
+  
+  #site-header .header-text .header-subtitle a {
+    color: #fff;
+  }
+  
+  #site-header .header-text .header-subtitle a:hover {
+    color: #ddd;
+  }
+  
+  /**
+   * Movie Review styles
+   */
+  .single-mbt_movie_review .entry-content {
+    text-align: justify;
+  }
+  .single-mbt_movie_review .entry-content .preamble {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
