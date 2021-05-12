@@ -1,6 +1,4 @@
 <?php
-
-get_template_part('template-parts/header-image');
 	/**
 	 * The template for displaying archive pages
 	 *
@@ -10,6 +8,7 @@ get_template_part('template-parts/header-image');
 	 */
 	
 	get_header();
+    get_template_part('template-parts/header-image');
 	?>
 
 <div id="content" class="site-content container py-5 mt-5">
@@ -62,7 +61,7 @@ get_template_part('template-parts/header-image');
                                     <?php endif; ?>
                                     <!-- Excerpt & Read more -->
                                     <div class="card-text mt-auto">
-                                        <?php the_excerpt(); ?> <a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
+                                        <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
                                     </div>
                                     <!-- Tags -->
                                     <?php bootscore_tags(); ?>
