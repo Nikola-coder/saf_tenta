@@ -40,7 +40,32 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
+
 	function bootscore_setup() {
+
+        // header image
+        add_theme_support('custom-logo', [
+            'height' => 50,
+            'width' => 200,
+        ]);
+
+        add_theme_support('custom-header', [
+            // Display the header text along with the image
+            'header-text' => true,
+
+            // Header image width (in pixels)
+            'width' => 2560,
+
+            // Header image height (in pixels)
+            'height' => 500,
+
+            // Allow flexible image width
+            'flex-width' => true,
+
+            // Allow flexible image height
+            'flex-height' => true,
+        ]);
+
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -90,6 +115,23 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'bootscore_setup' );
+
+
+/**
+ * Output custom logo (if set, otherwise output site title).
+ *
+ * @return void
+ */
+function mbt_navbar_brand() {
+    $custom_logo_id = get_theme_mod('custom_logo');
+    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+
+    if ($logo) {
+        echo '<img src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+    } else {
+        echo get_bloginfo('name');
+    }
+}
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.

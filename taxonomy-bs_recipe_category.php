@@ -1,8 +1,6 @@
 <?php
-
-get_template_part('template-parts/header-image');
 	/**
-	 * The template for displaying archive pages
+	 * The template for displaying category pages
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -14,9 +12,9 @@ get_template_part('template-parts/header-image');
 
 <div id="content" class="site-content container py-5 mt-5">
     <div id="primary" class="content-area">
-        
+
         <!-- Hook to add something nice -->
-        <?php bs_after_primary(); ?>  
+        <?php bs_after_primary(); ?>
 
         <div class="row">
             <div class="col">
@@ -25,7 +23,7 @@ get_template_part('template-parts/header-image');
 
                     <!-- Title & Description -->
                     <header class="page-header mb-4">
-                        <h1><?php the_archive_title(); ?></h1>
+                        <h1><?php single_cat_title(); ?></h1>
                         <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
 
@@ -40,9 +38,7 @@ get_template_part('template-parts/header-image');
 							?>
                             <div class="col">
                                 <div class="card-body">
-                                    
                                     <?php bootscore_category_badge(); ?>
-                                    
                                     <!-- Title -->
                                     <h2 class="blog-post-title">
                                         <a href="<?php the_permalink(); ?>">
