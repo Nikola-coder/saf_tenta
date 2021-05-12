@@ -55,20 +55,44 @@ if(!function_exists('bootscore_bs_recipe')){
 		if (have_rows('ingredients')){
 			// yes we have at least one row of sub fields to show!
 			
-			echo '<ul>';
+			
+			echo 'Ingredients:<p><ul>';
 			while(have_rows('ingredients')){
 				the_row();
 
 				$ingredients = get_sub_field('ingredients');
 				$amount = get_sub_field('amount');
 			
-				printf('<li><strong>%s:</strong> %s</li>', $ingredients, $amount);
+				printf('<li><strong>%s:</strong><span class="ms-1">%s</li>', $ingredients, $amount);
 			}
 			echo '<ul>';
 		}
 	}
 }
 // End Single Recepie Details
+
+if(!function_exists('bootscore_bs_servings')){
+	function bootscore_bs_servings(){
+		if(!function_exists('get_field')){
+			return;
+		}
+
+		if (have_rows('servings')){
+			// yes we have at least one row of sub fields to show!
+			
+			
+			while(have_rows('servings')){
+				the_row();
+
+				$servings = get_sub_field('servings');
+				$amount = get_sub_field('amount');
+			
+				printf('%s: %s <p>', $servings, $amount);
+			}
+			
+		}
+	}
+}
 
 if (!function_exists('bootscore_bs_instructions')) {
 	function bootscore_bs_instructions() {

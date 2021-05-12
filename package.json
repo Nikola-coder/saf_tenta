@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/drblue/wcm20-cms-saf-bootscore-5#readme",
   "devDependencies": {
-    "laravel-mix": "^6.0.18",
+    "laravel-mix": "^6.0.19",
     "postcss": "^8.2.13",
     "resolve-url-loader": "^3.1.2",
     "sass": "^1.32.12",

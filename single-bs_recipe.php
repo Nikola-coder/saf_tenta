@@ -37,8 +37,13 @@
                         <?php the_content(); ?>
                     </div>
                         <?php bootscore_post_thumbnail(); ?>
+                        <?php bootscore_bs_servings(); ?>
                     </header>
+                    
+                    <div>
                             <?php bootscore_bs_recipe(); ?>
+                    </div>
+                            
 
                             <?php bootscore_bs_instructions(); ?>
 

@@ -10940,7 +10940,7 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 
 #site-header .header-text {
   position: absolute;
-  top: 0;
+  top: 40px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -10964,16 +10964,4 @@ Custom checkboxes, radios, range, and select on Mac/iOS Safari if custom Sass co
 
 #site-header .header-text .header-subtitle a:hover {
   color: #ddd;
-}
-
-/**
- * Movie Review styles
- */
-.single-mbt_movie_review .entry-content {
-  text-align: justify;
-}
-.single-mbt_movie_review .entry-content .preamble {
-  font-size: 1.2em;
-  font-style: italic;
-  margin-bottom: 1rem;
 }

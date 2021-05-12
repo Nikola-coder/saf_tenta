@@ -13,7 +13,7 @@
 			$title = single_term_title(__('Genre: ', 'recipes'), false);
 
 		} else if (is_home()) {
-			$title = __('Welcome to yescookie', 'recipes');
+			$title = __('Welcome to recipes', 'recipes');
 
 		} else if (is_search()) {
 			$title = sprintf(
