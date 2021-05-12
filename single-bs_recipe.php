@@ -41,7 +41,7 @@
                     </header>
                     
                     <div>
-                            <?php bootscore_bs_recipe(); ?>
+                            <?php bootscore_bs_ingredients(); ?>
                     </div>
                             
 

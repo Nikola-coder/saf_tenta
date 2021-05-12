@@ -13,7 +13,7 @@
 			$title = single_term_title(__('Genre: ', 'recipes'), false);
 
 		} else if (is_home()) {
-			$title = __('Welcome to recipes', 'recipes');
+			$title = __('Home:','Welcome To Recipes', 'recipes');
 
 		} else if (is_search()) {
 			$title = sprintf(
@@ -35,7 +35,7 @@
 			class="img-fluid"
 		>
 		<div class="header-text-wrapper">
-			<div class="header-text display-4"><?php echo $title; ?></div>
+			<div class="header-text text-light display-4"><?php echo $title; ?></div>
 		</div>
 	</div>
 <?php endif; ?>
