@@ -168,6 +168,27 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_609fcb515c338",
+            "label": "recipe score",
+            "name": "recipe_score",
+            "type": "number",
+            "instructions": "grade the recipe from 1-5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": 1,
+            "max": 5,
+            "step": 1
         }
     ],
     "location": [
@@ -187,5 +208,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620828255
+    "modified": 1621085182
 }
