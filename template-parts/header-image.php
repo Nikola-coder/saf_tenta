@@ -9,16 +9,16 @@
 		} else if (is_post_type_archive()) {
 			$title = post_type_archive_title('', false);
 
-		} else if (is_tax('mbt_movie_genre')) {
-			$title = single_term_title(__('Genre: ', 'recipes'), false);
+		} else if (is_tax()) {
+			$title = single_term_title(__('', 'recipes'), false);
 
 		} else if (is_home()) {
-			$title = __('Home:','Welcome To Recipes', 'recipes');
+			$title = __('Home','Welcome To Recipes', 'recipes');
 
 		} else if (is_search()) {
 			$title = sprintf(
 				// translators: Search results for query %s
-				__('Search results for "%s"', 'mybasictheme'),
+				__('Search results for "%s"', 'recipes'),
 				htmlspecialchars($_REQUEST['s'])
 			);
 
