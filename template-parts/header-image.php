@@ -7,7 +7,7 @@
 			$title = single_tag_title(__('Tag: ', 'recipes'), false);
 
 		} else if (is_post_type_archive()) {
-			$title = post_type_archive_title('', false);
+			$title = post_type_archive_title(__('', 'recipes'), false);
 
 		} else if (is_tax()) {
 			$title = single_term_title(__('', 'recipes'), false);

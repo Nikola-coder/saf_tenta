@@ -29,6 +29,66 @@ endif;
 // Category Badge End
 
 
+// recipes category Badge
+if ( ! function_exists( 'bootscore_recipe_category_badge' ) ) :
+	function bootscore_recipe_category_badge() {
+		// get all movie genres for the current post
+		$categories = get_the_terms(get_the_ID(), 'bs_recipe_category');
+
+		// bail if no movie genres exist for this post
+		if (!$categories) {
+			return;
+		}
+
+		echo '<div class="movie-genre-badges mb-2">';
+		$badges = [];
+
+		// loop over all genres and construct a HTML-link for each of them
+		foreach ($categories as $category) {
+			// get URL to the archive page for $genre
+			$category_url = get_term_link($category, 'mbt_movie_genre');
+
+			// create anchor link
+			$badge = sprintf(
+				'<a href="%s" class="badge bg-info">%s</a>',
+				$category_url,
+				$category->name
+			);
+
+			// add anchor link to list of genre badges
+			array_push($badges, $badge);
+		}
+
+		// output badges with a space between them
+		echo implode(' ', $badges);
+
+		echo '</div>';
+	}
+endif;
+// Category Badge End
+
+// recipe score start
+if (!function_exists('bootscore_recipe_score_badge')) {
+	function bootscore_recipe_score_badge() {
+		// bail if ACF is not installed/activated, as we won't have a recipe score to show
+		if (!function_exists('get_field')) {
+			return;
+		}
+
+		$recipe_score = get_field('recipe_score', false, false);
+
+		if (!empty($recipe_score)) {
+			printf('<div class="badge bg-light mb-2">%s</div>',
+				sprintf(
+					__('Recipe Rating: %s', 'bootscore'),
+					str_repeat('⭐️', $recipe_score)
+				)
+			);
+		}
+	}
+}
+// recipe score end
+
 // Category
 if ( ! function_exists( 'bootscore_category' ) ) :
 	function bootscore_category() {
