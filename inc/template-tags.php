@@ -218,7 +218,7 @@ if (!function_exists('bootscore_bs_instructions')) {
 	}
 }
 
-// Flex
+// Flexslider start
 if (!function_exists('bootscore_recipe_gallery')) {
 	function bootscore_recipe_gallery() {
 		// bail if ACF is not installed/activated
@@ -238,7 +238,7 @@ if (!function_exists('bootscore_recipe_gallery')) {
 				<ul class="slides">
 					<?php foreach ($gallery as $image): ?>
 						<li>
-							<img src="<?php echo $image['url']; ?>">
+							<img src="<?php echo $image['url'], 'thumbnail'; ?>">
 						</li>
 					<?php endforeach; ?>
 				</ul>
@@ -246,6 +246,7 @@ if (!function_exists('bootscore_recipe_gallery')) {
 		<?php
 	}
 }
+// flexslider end
 
 // Date
 if ( ! function_exists( 'bootscore_date' ) ) :

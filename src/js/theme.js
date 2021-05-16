@@ -180,6 +180,8 @@ jQuery(document).ready(function ($) {
 --------------------------------------------------------------*/
 
 jQuery(document).ready(function ($) {
-    $('.flexslider').flexslider();
+    $('.flexslider').flexslider({
+        animation: "slide"
+      });
     });
 
