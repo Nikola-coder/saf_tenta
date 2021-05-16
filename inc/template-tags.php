@@ -42,7 +42,7 @@ if ( ! function_exists( 'bootscore_recipe_category_badge' ) ) :
 
 		echo '<div class="movie-genre-badges mb-2">';
 		$badges = [];
-
+		
 		// loop over all genres and construct a HTML-link for each of them
 		foreach ($categories as $category) {
 			// get URL to the archive page for $genre
@@ -67,6 +67,47 @@ if ( ! function_exists( 'bootscore_recipe_category_badge' ) ) :
 endif;
 // Category Badge End
 
+
+// Tags badge start
+if ( ! function_exists( 'bootscore_recipe_tags_badge' ) ) :
+	function bootscore_recipe_tag_badge() {
+		// get all movie genres for the current post
+		$tags = get_the_terms(get_the_ID(), 'bs_recipe_tags');
+
+		// bail if no movie genres exist for this post
+		if (!$tags) {
+			return;
+		}
+
+		echo '<div class="movie-genre-badges mb-2">';
+		$badges = [];
+
+		
+		// loop over all tags and construct a HTML-link for each of them
+		foreach ($tags as $tag) {
+			// get URL to the archive page for $genre
+			$tag_url = get_term_link($tag, 'bs_recipe_tags');
+
+			// create anchor link
+			
+			$badge = sprintf(
+				'<a href="%s" class="badge bg-secondary">%s</a>',
+				$tag_url,
+				$tag->name
+			);
+
+			// add anchor link to list of genre badges
+			array_push($badges, $badge);
+		}
+
+		// output badges with a space between them
+		echo implode(' ', $badges);
+
+		echo '</div>';
+	}
+endif;
+// Tags Badge End
+
 // recipe score start
 if (!function_exists('bootscore_recipe_score_badge')) {
 	function bootscore_recipe_score_badge() {
@@ -78,7 +119,7 @@ if (!function_exists('bootscore_recipe_score_badge')) {
 		$recipe_score = get_field('recipe_score', false, false);
 
 		if (!empty($recipe_score)) {
-			printf('<div class="badge bg-light mb-2">%s</div>',
+			printf('<div class=" bg-light mb-2">%s</div>',
 				sprintf(
 					__('Recipe Rating: %s', 'bootscore'),
 					str_repeat('⭐️', $recipe_score)
@@ -174,6 +215,35 @@ if (!function_exists('bootscore_bs_instructions')) {
 			}
 			echo '<ol>';
 		}
+	}
+}
+
+// Flex
+if (!function_exists('bootscore_recipe_gallery')) {
+	function bootscore_recipe_gallery() {
+		// bail if ACF is not installed/activated
+		if (!function_exists('get_field')) {
+			return;
+		}
+
+		$gallery = get_field('gallery');
+		// dump($gallery);
+
+		if (!$gallery) {
+			return;
+		}
+
+		?>
+			<div class="flexslider">
+				<ul class="slides">
+					<?php foreach ($gallery as $image): ?>
+						<li>
+							<img src="<?php echo $image['url']; ?>">
+						</li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
+		<?php
 	}
 }
 

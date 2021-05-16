@@ -40,7 +40,6 @@
                             <div class="col">
                                 <div class="card-body">
                                     
-                                    
                                     <!-- recipe score -->
                                     <?php bootscore_recipe_score_badge(); ?>
                                     
@@ -53,6 +52,10 @@
 
                                     <!--  category tag-->
                                     <?php bootscore_recipe_category_badge(); ?>
+
+                                    <!--  recipe tag-->
+                                    <?php bootscore_recipe_tag_badge(); ?>
+                                    
                                     <!-- Meta -->
                                     <?php if ( 'post' === get_post_type() ) : ?>
                                     <small class="text-muted mb-2">
