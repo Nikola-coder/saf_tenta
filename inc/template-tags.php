@@ -218,7 +218,7 @@ if (!function_exists('bootscore_bs_instructions')) {
 	}
 }
 
-// Flex
+// Flexslider start
 if (!function_exists('bootscore_recipe_gallery')) {
 	function bootscore_recipe_gallery() {
 		// bail if ACF is not installed/activated
@@ -246,6 +246,7 @@ if (!function_exists('bootscore_recipe_gallery')) {
 		<?php
 	}
 }
+// flexslider end
 
 // Date
 if ( ! function_exists( 'bootscore_date' ) ) :

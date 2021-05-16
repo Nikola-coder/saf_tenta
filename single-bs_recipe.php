@@ -24,7 +24,6 @@
                         <?php the_title('<h1>', '</h1>'); ?>
                         <p class="entry-meta">
                             <?php bootscore_recipe_score_badge(); ?>
-                            <?php bootscore_recipe_gallery(); ?>
 
                             <small class="text-muted">
                                 

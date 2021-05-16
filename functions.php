@@ -65,6 +65,7 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
             // Allow flexible image height
             'flex-height' => true,
         ]);
+        
 
 		/*
 		 * Make theme available for translation.
