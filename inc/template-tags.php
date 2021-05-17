@@ -238,7 +238,7 @@ if (!function_exists('bootscore_recipe_gallery')) {
 				<ul class="slides">
 					<?php foreach ($gallery as $image): ?>
 						<li>
-							<img src="<?php echo $image['url'], 'thumbnail'; ?>">
+							<img src="<?php echo $image['url']; ?>">
 						</li>
 					<?php endforeach; ?>
 				</ul>

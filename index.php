@@ -26,20 +26,6 @@ get_header();
                 <p class="lead"><?php bloginfo('description'); ?></p>
             </div>
 
-            <div class="flexslider">
-                <ul class="slides">
-                    <li>
-                        <img src="/wp-content/themes/recipes/img/pexels-photo-3026808.jpeg" />
-                    </li>
-                    <li>
-                        <img src="/wp-content/themes/recipes/img/pexels-photo-671956.jpeg" />
-                    </li>
-                    <li>
-                        <img src="/wp-content/themes/recipes/img/pexels-photo-853006.jpeg" />
-                    </li>
-                </ul>
-            </div>
-
             <!-- Sticky Post -->
             <?php if (is_sticky() && is_home() && !is_paged()) : ?>
                 <div class="row">
