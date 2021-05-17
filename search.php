@@ -27,7 +27,7 @@
                         <h1>
                             <?php
 									/* translators: %s: search query. */
-									printf( esc_html__( 'Search Results for: %s', 'bootscore' ), '<span class="text-secondary">' . get_search_query() . '</span>' );
+									printf( esc_html__( 'Search Results for: %s', 'recipes' ), '<span class="text-secondary">' . get_search_query() . '</span>' );
 									?>
                         </h1>
                     </header>

@@ -39,7 +39,7 @@
                 <?php the_content(); ?>
                 <!-- .entry-content -->
                 <?php wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bootscore' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'recipes' ),
 					'after'  => '</div>',
 					) );
 					?>

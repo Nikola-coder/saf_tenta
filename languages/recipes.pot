@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-05-17T13:58:42+00:00\n"
+"POT-Creation-Date: 2021-05-17T14:48:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: bootscore\n"
@@ -34,45 +34,6 @@ msgstr ""
 msgid "https://crftwrk.de"
 msgstr ""
 
-#: 404.php:22
-msgid "Page not found."
-msgstr ""
-
-#: 404.php:27
-msgid "Back Home &raquo;"
-msgstr ""
-
-#: archive.php:64
-#: index.php:79
-#: index.php:136
-#: template-parts/content-bs_recipe-excerpt.php:50
-#: template-parts/content-excerpt.php:49
-#: template-parts/content-search.php:42
-#: unused-template-files/archive-equal-height-sidebar-right.php:62
-#: unused-template-files/archive-equal-height.php:63
-#: unused-template-files/archive-masonry.php:63
-#: unused-template-files/archive-sidebar-left.php:65
-#: unused-template-files/author-equal-height-sidebar-right.php:72
-#: unused-template-files/author-equal-height.php:73
-#: unused-template-files/author-masonry.php:73
-#: unused-template-files/author-sidebar-left.php:75
-#: unused-template-files/category-equal-height-sidebar-right.php:63
-#: unused-template-files/category-equal-height.php:63
-#: unused-template-files/category-masonry.php:63
-#: unused-template-files/category-sidebar-left.php:63
-msgid "Read more »"
-msgstr ""
-
-#: author.php:72
-msgid "Read more"
-msgstr ""
-
-#. translators: %s: post title
-#: comments.php:34
-msgctxt "comments title"
-msgid "One Comment &ldquo;%s&rdquo;"
-msgstr ""
-
 #. translators: 1: number of comments, 2: post title
 #: comments.php:38
 msgctxt "comments title"
@@ -81,46 +42,12 @@ msgid_plural "%1$s Comments on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:55
 #: comments.php:73
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:58
 #: comments.php:76
 msgid "Older Comments"
-msgstr ""
-
-#: comments.php:59
-#: comments.php:77
-msgid "Newer Comments"
-msgstr ""
-
-#: comments.php:91
-msgid "Comments are closed."
-msgstr ""
-
-#. translators: %s: post title
-#: comments.php:98
-#: inc/template-tags.php:314
-msgid "Leave a Comment"
-msgstr ""
-
-#. translators: %s is replaced with "string"
-#: comments.php:100
-msgid "Leave a Comment to %s"
-msgstr ""
-
-#: comments.php:101
-msgid "Cancel"
-msgstr ""
-
-#: comments.php:102
-msgid "Post Comment"
-msgstr ""
-
-#: comments.php:104
-msgid "Start typing..."
 msgstr ""
 
 #: comments.php:122
@@ -137,85 +64,13 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: functions.php:98
-msgid "Main Menu"
-msgstr ""
-
-#: functions.php:99
-msgid "Footer Menu"
-msgstr ""
-
-#: functions.php:168
-msgid "Top Nav"
-msgstr ""
-
-#: functions.php:170
-#: functions.php:182
-#: functions.php:194
-#: functions.php:206
-#: functions.php:218
-#: functions.php:230
-#: functions.php:242
-#: functions.php:254
-#: functions.php:266
-msgid "Add widgets here."
-msgstr ""
-
-#: functions.php:180
-msgid "Top Nav Search"
-msgstr ""
-
-#: functions.php:192
-msgid "Sidebar"
-msgstr ""
-
-#: functions.php:204
-msgid "Top Footer"
-msgstr ""
-
-#: functions.php:216
-msgid "Footer 1"
-msgstr ""
-
-#: functions.php:228
-msgid "Footer 2"
-msgstr ""
-
-#: functions.php:240
-msgid "Footer 3"
-msgstr ""
-
-#: functions.php:252
-msgid "Footer 4"
-msgstr ""
-
-#: functions.php:264
-msgid "404 Page"
-msgstr ""
-
 #: functions.php:464
 msgid "Password"
 msgstr ""
 
-#: functions.php:465
-msgid "Submit"
-msgstr ""
-
-#: header-woocommerce.php:82
 #: header.php:83
+#: unused-template-files/header-woocommerce.php:82
 msgid "Close menu"
-msgstr ""
-
-#: header-woocommerce.php:145
-msgid "Close account"
-msgstr ""
-
-#: header-woocommerce.php:157
-msgid "Continue shopping"
-msgstr ""
-
-#: header-woocommerce.php:166
-msgid "Cart"
 msgstr ""
 
 #: inc/comment-list.php:32
@@ -557,6 +412,11 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
+#. translators: %s: post title
+#: inc/template-tags.php:314
+msgid "Leave a Comment"
+msgstr ""
+
 #: inc/template-tags.php:371
 msgid "Leave a comment"
 msgstr ""
@@ -614,14 +474,6 @@ msgstr ""
 msgid "Blank with container"
 msgstr ""
 
-#: page-blank-with-container.php:21
-#: page-blank-without-container.php:21
-#: page-sidebar-left.php:38
-#: page-sidebar-right.php:37
-#: page.php:42
-msgid "Pages:"
-msgstr ""
-
 #. Template Name of the theme
 msgid "Blank without container"
 msgstr ""
@@ -638,42 +490,41 @@ msgstr ""
 msgid "Right Sidebar"
 msgstr ""
 
-#. translators: %s: search query.
-#: search.php:30
-msgid "Search Results for: %s"
+#: unused-template-files/archive-equal-height-sidebar-right.php:62
+#: unused-template-files/archive-equal-height.php:63
+#: unused-template-files/archive-masonry.php:63
+#: unused-template-files/archive-sidebar-left.php:65
+#: unused-template-files/author-equal-height-sidebar-right.php:72
+#: unused-template-files/author-equal-height.php:73
+#: unused-template-files/author-masonry.php:73
+#: unused-template-files/author-sidebar-left.php:75
+#: unused-template-files/category-equal-height-sidebar-right.php:63
+#: unused-template-files/category-equal-height.php:63
+#: unused-template-files/category-masonry.php:63
+#: unused-template-files/category-sidebar-left.php:63
+msgid "Read more »"
 msgstr ""
 
-#: searchform.php:3
-msgid "Search"
+#: unused-template-files/header-woocommerce.php:145
+msgid "Close account"
 msgstr ""
 
-#: single-bs_recipe.php:32
-#: single.php:29
-#: unused-template-files/single-full-width-image.php:38
-#: unused-template-files/single-sidebar-left.php:31
-#: unused-template-files/single-sidebar-none.php:28
-msgid " by "
+#: unused-template-files/header-woocommerce.php:157
+msgid "Continue shopping"
 msgstr ""
 
-#: template-parts/content-none.php:14
-msgid "Nothing Found for"
-msgstr ""
-
-#. translators: 1: link to WP admin new post page.
-#: template-parts/content-none.php:25
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-
-#: template-parts/content-none.php:37
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr ""
-
-#: template-parts/content-none.php:43
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+#: unused-template-files/header-woocommerce.php:166
+msgid "Cart"
 msgstr ""
 
 #. Template Name of the theme
 msgid "Full width image"
+msgstr ""
+
+#: unused-template-files/single-full-width-image.php:38
+#: unused-template-files/single-sidebar-left.php:31
+#: unused-template-files/single-sidebar-none.php:28
+msgid " by "
 msgstr ""
 
 #. Template Name of the theme

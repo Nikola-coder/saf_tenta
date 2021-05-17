@@ -29,7 +29,7 @@
                                 
                                 <?php
 							         bootscore_date();
-							         _e(' by ', 'bootscore'); the_author_posts_link();
+							         _e(' by ', 'recipes'); the_author_posts_link();
 							         bootscore_comment_count();							
 							     ?>
                                  <?php bootscore_recipe_category_badge(); ?>

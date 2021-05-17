@@ -95,8 +95,8 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Main Menu', 'bootscore' ),
-			'secondary' => esc_html__( 'Footer Menu', 'bootscore' ),
+			'primary' => esc_html__( 'Main Menu', 'recipes' ),
+			'secondary' => esc_html__( 'Footer Menu', 'recipes' ),
 		) );
 
 		/*
@@ -165,9 +165,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Top Nav
         register_sidebar(array(
-            'name' => esc_html__('Top Nav', 'bootscore' ),
+            'name' => esc_html__('Top Nav', 'recipes' ),
             'id' => 'top-nav',
-            'description' => esc_html__('Add widgets here.', 'bootscore' ),
+            'description' => esc_html__('Add widgets here.', 'recipes' ),
             'before_widget' => '<div class="ms-3">',
             'after_widget' => '</div>',
             'before_title' => '<div class="widget-title d-none">',
@@ -177,9 +177,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Top Nav Search
         register_sidebar(array(
-            'name' => esc_html__('Top Nav Search', 'bootscore' ),
+            'name' => esc_html__('Top Nav Search', 'recipes' ),
             'id' => 'top-nav-search',
-            'description' => esc_html__('Add widgets here.', 'bootscore' ),
+            'description' => esc_html__('Add widgets here.', 'recipes' ),
             'before_widget' => '<div class="top-nav-search">',
             'after_widget' => '</div>',
             'before_title' => '<div class="widget-title d-none">',
@@ -189,9 +189,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Sidebar
         register_sidebar( array(
-            'name'          => esc_html__( 'Sidebar', 'bootscore' ),
+            'name'          => esc_html__( 'Sidebar', 'recipes' ),
             'id'            => 'sidebar-1',
-            'description'   => esc_html__( 'Add widgets here.', 'bootscore' ),
+            'description'   => esc_html__( 'Add widgets here.', 'recipes' ),
             'before_widget' => '<section id="%1$s" class="widget %2$s card card-body mb-4 bg-light border-0">',
             'after_widget'  => '</section>',
             'before_title'  => '<h2 class="widget-title card-title border-bottom py-2">',
@@ -201,9 +201,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Top Footer
         register_sidebar(array(
-            'name' => esc_html__('Top Footer', 'bootscore' ),
+            'name' => esc_html__('Top Footer', 'recipes' ),
             'id' => 'top-footer',
-            'description' => esc_html__('Add widgets here.', 'bootscore' ),
+            'description' => esc_html__('Add widgets here.', 'recipes' ),
             'before_widget' => '<div class="footer_widget mb-5">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title">',
@@ -213,9 +213,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Footer 1
         register_sidebar(array(
-            'name' => esc_html__('Footer 1', 'bootscore' ),
+            'name' => esc_html__('Footer 1', 'recipes' ),
             'id' => 'footer-1',
-            'description' => esc_html__('Add widgets here.', 'bootscore' ),
+            'description' => esc_html__('Add widgets here.', 'recipes' ),
             'before_widget' => '<div class="footer_widget mb-4">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title h4">',
@@ -225,9 +225,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Footer 2
         register_sidebar(array(
-            'name' => esc_html__('Footer 2', 'bootscore' ),
+            'name' => esc_html__('Footer 2', 'recipes' ),
             'id' => 'footer-2',
-            'description' => esc_html__('Add widgets here.', 'bootscore'),
+            'description' => esc_html__('Add widgets here.', 'recipes'),
             'before_widget' => '<div class="footer_widget mb-4">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title h4">',
@@ -237,9 +237,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Footer 3
         register_sidebar(array(
-            'name' => esc_html__('Footer 3', 'bootscore' ),
+            'name' => esc_html__('Footer 3', 'recipes' ),
             'id' => 'footer-3',
-            'description' => esc_html__('Add widgets here.', 'bootscore'),
+            'description' => esc_html__('Add widgets here.', 'recipes'),
             'before_widget' => '<div class="footer_widget mb-4">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title h4">',
@@ -249,9 +249,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // Footer 4
         register_sidebar(array(
-            'name' => esc_html__('Footer 4', 'bootscore' ),
+            'name' => esc_html__('Footer 4', 'recipes' ),
             'id' => 'footer-4',
-            'description' => esc_html__('Add widgets here.', 'bootscore'),
+            'description' => esc_html__('Add widgets here.', 'recipes'),
             'before_widget' => '<div class="footer_widget mb-4">',
             'after_widget' => '</div>',
             'before_title' => '<h2 class="widget-title h4">',
@@ -261,9 +261,9 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 
         // 404 Page
         register_sidebar(array(
-            'name' => esc_html__('404 Page', 'bootscore' ),
+            'name' => esc_html__('404 Page', 'recipes' ),
             'id' => '404-page',
-            'description' => esc_html__('Add widgets here.', 'bootscore'),
+            'description' => esc_html__('Add widgets here.', 'recipes'),
             'before_widget' => '<div class="mb-4">',
             'after_widget' => '</div>',
             'before_title' => '<h1 class="widget-title">',
@@ -462,7 +462,7 @@ function bootscore_pw_form () {
 	$output = '
 		  <form action="'.get_option('siteurl').'/wp-login.php?action=postpass" method="post" class="form-inline">'."\n"
 		.'<input name="post_password" type="password" size="" class="form-control me-2 my-1" placeholder="' . __('Password', 'bootscore') . '"/>'."\n"
-		.'<input type="submit" class="btn btn-outline-primary my-1" name="Submit" value="' . __('Submit', 'bootscore') . '" />'."\n"
+		.'<input type="submit" class="btn btn-outline-primary my-1" name="Submit" value="' . __('Submit', 'recipes') . '" />'."\n"
 		.'</p>'."\n"
 		.'</form>'."\n";
 	return $output;

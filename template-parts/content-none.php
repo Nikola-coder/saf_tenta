@@ -11,7 +11,7 @@
 <section class="no-results not-found">
 
 			<header class="page-header mb-4">
-				<h1 class="page-title"><?php esc_html_e( 'Nothing Found for', 'bootscore' ); ?> <span class="text-secondary"><?php echo $s ?></span></h1>
+				<h1 class="page-title"><?php esc_html_e( 'Nothing Found for', 'recipes' ); ?> <span class="text-secondary"><?php echo $s ?></span></h1>
 			</header>
     
 			<!-- .page-header -->
@@ -22,7 +22,7 @@
 						printf(
 							'<p>' . wp_kses(
 								/* translators: 1: link to WP admin new post page. */
-								__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'bootscore' ),
+								__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'recipes' ),
 								array(
 									'a' => array(
 										'href' => array(),
@@ -34,13 +34,13 @@
 					
 					elseif ( is_search() ) :
 						?>
-				<p class="alert alert-info mb-4"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bootscore' ); ?></p>
+				<p class="alert alert-info mb-4"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'recipes' ); ?></p>
 				<?php
 					get_search_form();
 					
 					else :
 					?>
-				<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'bootscore' ); ?></p>
+				<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'recipes' ); ?></p>
 				<?php
 					get_search_form();
 					

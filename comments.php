@@ -31,7 +31,7 @@ if ( post_password_required() ) {
             $comments_number = get_comments_number();
             if ( '1' === $comments_number ) {
                 /* translators: %s: post title */
-                printf( _x( 'One Comment &ldquo;%s&rdquo;', 'comments title', 'bootscore' ), get_the_title() );
+                printf( _x( 'One Comment &ldquo;%s&rdquo;', 'comments title', 'recipes' ), get_the_title() );
             } else {
                 printf(
                 /* translators: 1: number of comments, 2: post title */
@@ -52,11 +52,11 @@ if ( post_password_required() ) {
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'bootscore' ); ?></h2>
+                <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'recipes' ); ?></h2>
                 <div class="nav-links">
 
-                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'bootscore' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'bootscore' ) ); ?></div>
+                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'recipes' ) ); ?></div>
+                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'recipes' ) ); ?></div>
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-above -->
@@ -74,7 +74,7 @@ if ( post_password_required() ) {
                 <div class="nav-links pagination justify-content-center">
 
                     <div class="nav-previous page-item"><?php previous_comments_link( esc_html__( 'Older Comments', 'bootscore') ) ; ?></div>
-                    <div class="nav-next page-item"><?php next_comments_link( esc_html__( 'Newer Comments', 'bootscore' ) ); ?></div>
+                    <div class="nav-next page-item"><?php next_comments_link( esc_html__( 'Newer Comments', 'recipes' ) ); ?></div>
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-below -->
@@ -88,20 +88,20 @@ if ( post_password_required() ) {
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'bootscore' ); ?></p>
+        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'recipes' ); ?></p>
         <?php
     endif; ?>
 
     <?php comment_form( $args = array(
         'id_form'           => 'commentform',  // that's the wordpress default value! delete it or edit it ;)
         'id_submit'         => 'commentsubmit',
-        'title_reply'       => __( 'Leave a Comment', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply'       => __( 'Leave a Comment', 'recipes' ),  // that's the wordpress default value! delete it or edit it ;)
         /* translators: %s is replaced with "string" */
-        'title_reply_to'    => __( 'Leave a Comment to %s', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
-        'cancel_reply_link' => __( 'Cancel', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
-        'label_submit'      => __( 'Post Comment', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply_to'    => __( 'Leave a Comment to %s', 'recipes' ),  // that's the wordpress default value! delete it or edit it ;)
+        'cancel_reply_link' => __( 'Cancel', 'recipes' ),  // that's the wordpress default value! delete it or edit it ;)
+        'label_submit'      => __( 'Post Comment', 'recipes' ),  // that's the wordpress default value! delete it or edit it ;)
 
-        'comment_field' =>  '<p><textarea placeholder="' . __('Start typing...', 'bootscore') . '" id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+        'comment_field' =>  '<p><textarea placeholder="' . __('Start typing...', 'recipes') . '" id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 
         /*'comment_notes_after' => '<p class="form-allowed-tags">' .
             __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:', 'bootscore' ) .
