@@ -96,6 +96,7 @@ if ( post_password_required() ) {
         'id_form'           => 'commentform',  // that's the wordpress default value! delete it or edit it ;)
         'id_submit'         => 'commentsubmit',
         'title_reply'       => __( 'Leave a Comment', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
+        /* translators: %s is replaced with "string" */
         'title_reply_to'    => __( 'Leave a Comment to %s', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
         'cancel_reply_link' => __( 'Cancel', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)
         'label_submit'      => __( 'Post Comment', 'bootscore' ),  // that's the wordpress default value! delete it or edit it ;)

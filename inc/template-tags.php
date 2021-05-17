@@ -121,6 +121,7 @@ if (!function_exists('bootscore_recipe_score_badge')) {
 		if (!empty($recipe_score)) {
 			printf('<div class=" bg-light mb-2">%s</div>',
 				sprintf(
+					/* translators: %s is replaced with "string" */
 					__('Recipe Rating: %s', 'bootscore'),
 					str_repeat('⭐️', $recipe_score)
 				)
@@ -284,6 +285,7 @@ if ( ! function_exists( 'bootscore_author' ) ) :
 
 	function bootscore_author() {
 		$byline = sprintf(
+			/* translators: %s is replaced with "string" */
 			esc_html_x( 'by %s', 'post author', 'bootscore' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
