@@ -30,6 +30,9 @@
                 <?php bootscore_post_thumbnail(); ?>
                 <!-- .entry-header -->
             </header>
+
+            <?php bootscore_recipe_gallery(); ?>
+            
             <div class="entry-content">
                 <!-- Content -->
                 <?php the_content(); ?>
