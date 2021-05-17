@@ -1,0 +1,560 @@
+# Copyright (C) 2021 Bastian Kreiter
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: bootScore 5 5.0.1.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/recipes\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-17T14:48:20+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: bootscore\n"
+
+#. Theme Name of the theme
+msgid "bootScore 5"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://bootscore.me/"
+msgstr ""
+
+#. Description of the theme
+msgid "A powerful Bootstrap 5 WordPress Starter Theme with WooCommerce Support. <a href=\"https://bootscore.me/category/documentation/\" target=\"_blank\">Documentation</a>. This theme gives you full control whatever you do and the full freedom to design whatever you want. It comes with a wide selection of category, page, post, author and archive templates as well as sidebar, header, footer and 404 widgets. There are no customizer settings in the backend. All settings can only be made by touching the code. Some CSS, HTML, PHP and JS Skills are required to customize it."
+msgstr ""
+
+#. Author of the theme
+msgid "Bastian Kreiter"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://crftwrk.de"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:38
+msgctxt "comments title"
+msgid "%1$s Comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:76
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:122
+#: woocommerce/single-product-reviews.php:89
+msgid "Name*"
+msgstr ""
+
+#: comments.php:126
+#: woocommerce/single-product-reviews.php:95
+msgid "Email* (will not be published)"
+msgstr ""
+
+#: comments.php:131
+msgid "Website"
+msgstr ""
+
+#: functions.php:464
+msgid "Password"
+msgstr ""
+
+#: header.php:83
+#: unused-template-files/header-woocommerce.php:82
+msgid "Close menu"
+msgstr ""
+
+#: inc/comment-list.php:32
+msgid "Pingback:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/comment-list.php:32
+#: inc/comment-list.php:61
+#: inc/template-tags.php:343
+msgid "Edit"
+msgstr ""
+
+#. translators: %s is replaced with "string"
+#: inc/comment-list.php:51
+msgid "%s <span class=\"says d-none\">says:</span>"
+msgstr ""
+
+#. translators: %1$s is date and %2$s is time"
+#: inc/comment-list.php:58
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/comment-list.php:68
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/comment-list.php:115
+msgid "Save my name, email, and website in this browser for the next time I comment."
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:10
+#: inc/custom-categories-taxonomies.php:35
+msgid "recipe categories"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:11
+msgid "recipe category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:12
+msgid "Recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:13
+msgid "All recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:14
+msgid "Edit recipe cateogry"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:15
+msgid "View recipe cateogry"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:16
+msgid "Update recipe cateogry name"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:17
+msgid "Add new recipe cateogry"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:18
+msgid "New recipe cateogry name"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:19
+msgid "Parent recipe cateogry"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:20
+msgid "Parent recipe cateogry:"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:21
+msgid "Search recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:22
+msgid "Popular recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:23
+msgid "Separate recipes category with commas"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:24
+msgid "Add or remove recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:25
+msgid "Choose from the most used recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:26
+msgid "No recipes category found"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:27
+msgid "No recipes category"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:28
+msgid "recipes category list navigation"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:29
+msgid "recipes category list"
+msgstr ""
+
+#: inc/custom-categories-taxonomies.php:30
+msgid "Back to recipes category"
+msgstr ""
+
+#: inc/custom-post-types.php:9
+#: inc/custom-post-types.php:44
+msgid "recipes"
+msgstr ""
+
+#: inc/custom-post-types.php:10
+#: inc/custom-post-types.php:34
+msgid "recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:11
+msgid "Recipes"
+msgstr ""
+
+#: inc/custom-post-types.php:12
+msgid "All recipes"
+msgstr ""
+
+#: inc/custom-post-types.php:13
+msgid "Add new"
+msgstr ""
+
+#: inc/custom-post-types.php:14
+msgid "Add new recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:15
+msgid "Edit recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:16
+msgid "New recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:17
+msgid "View recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:18
+msgid "View recipes"
+msgstr ""
+
+#: inc/custom-post-types.php:19
+msgid "Search recipes"
+msgstr ""
+
+#: inc/custom-post-types.php:20
+msgid "No recipes found"
+msgstr ""
+
+#: inc/custom-post-types.php:21
+msgid "No recipes found in trash"
+msgstr ""
+
+#: inc/custom-post-types.php:22
+#: inc/custom-post-types.php:40
+msgid "Parent recipe:"
+msgstr ""
+
+#: inc/custom-post-types.php:23
+msgid "Featured image for this recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:24
+msgid "Set featured image for this recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:25
+msgid "Remove featured image for this recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:26
+msgid "Use as featured image for this recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:27
+msgid "recipe archives"
+msgstr ""
+
+#: inc/custom-post-types.php:28
+msgid "Insert into recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:29
+msgid "Upload to this recipe"
+msgstr ""
+
+#: inc/custom-post-types.php:30
+msgid "Filter recipes list"
+msgstr ""
+
+#: inc/custom-post-types.php:31
+msgid "recipes list navigation"
+msgstr ""
+
+#: inc/custom-post-types.php:32
+msgid "recipes list"
+msgstr ""
+
+#: inc/custom-post-types.php:33
+msgid "recipes attributes"
+msgstr ""
+
+#: inc/custom-post-types.php:35
+msgid "recipe published"
+msgstr ""
+
+#: inc/custom-post-types.php:36
+msgid "recipe published privately."
+msgstr ""
+
+#: inc/custom-post-types.php:37
+msgid "recipe reverted to draft."
+msgstr ""
+
+#: inc/custom-post-types.php:38
+msgid "recipe scheduled"
+msgstr ""
+
+#: inc/custom-post-types.php:39
+msgid "recipe updated."
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:10
+#: inc/custom-tags-taxonomies.php:35
+msgid "recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:11
+msgid "recipe tag"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:12
+msgid "Recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:13
+msgid "All recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:14
+msgid "Edit recipe tag"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:15
+msgid "View recipe tag"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:16
+msgid "Update recipe tag name"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:17
+msgid "Add new recipe tag"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:18
+msgid "New recipe tag name"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:19
+msgid "Parent recipe tag"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:20
+msgid "Parent recipe tag:"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:21
+msgid "Search recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:22
+msgid "Popular recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:23
+msgid "Separate recipe tags with commas"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:24
+msgid "Add or remove recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:25
+msgid "Choose from the most used recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:26
+msgid "No recipe tags found"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:27
+msgid "No recipe tags"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:28
+msgid "recipe tags list navigation"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:29
+msgid "recipe tags list"
+msgstr ""
+
+#: inc/custom-tags-taxonomies.php:30
+msgid "Back to recipe tags"
+msgstr ""
+
+#. translators: %s is replaced with "string"
+#: inc/template-tags.php:125
+msgid "Recipe Rating: %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:140
+msgid ", "
+msgstr ""
+
+#. translators: %s is replaced with "string"
+#: inc/template-tags.php:289
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:314
+msgid "Leave a Comment"
+msgstr ""
+
+#: inc/template-tags.php:371
+msgid "Leave a comment"
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:395
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:460
+msgid "Internet Explorer detected"
+msgstr ""
+
+#: inc/template-tags.php:461
+msgid "This website will offer limited functionality in this browser."
+msgstr ""
+
+#: inc/template-tags.php:462
+msgid "Please use a modern and secure web browser like"
+msgstr ""
+
+#: inc/template-tags.php:462
+msgid "or"
+msgstr ""
+
+#: inc/template-tags.php:462
+msgid "to display this site correctly."
+msgstr ""
+
+#: languages/plugin-translations.php:2
+msgid "All"
+msgstr ""
+
+#: languages/plugin-translations.php:3
+msgid "Look what I found: "
+msgstr ""
+
+#: languages/plugin-translations.php:4
+msgid "Cookies help us deliver our services. By using our services, you agree to our use of cookies."
+msgstr ""
+
+#: languages/plugin-translations.php:5
+msgid "/privacy-policy"
+msgstr ""
+
+#: languages/plugin-translations.php:6
+msgid "More Information"
+msgstr ""
+
+#: languages/plugin-translations.php:7
+msgid "Accept"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blank with container"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blank without container"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full Width Image"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Left Sidebar"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Right Sidebar"
+msgstr ""
+
+#: unused-template-files/archive-equal-height-sidebar-right.php:62
+#: unused-template-files/archive-equal-height.php:63
+#: unused-template-files/archive-masonry.php:63
+#: unused-template-files/archive-sidebar-left.php:65
+#: unused-template-files/author-equal-height-sidebar-right.php:72
+#: unused-template-files/author-equal-height.php:73
+#: unused-template-files/author-masonry.php:73
+#: unused-template-files/author-sidebar-left.php:75
+#: unused-template-files/category-equal-height-sidebar-right.php:63
+#: unused-template-files/category-equal-height.php:63
+#: unused-template-files/category-masonry.php:63
+#: unused-template-files/category-sidebar-left.php:63
+msgid "Read more »"
+msgstr ""
+
+#: unused-template-files/header-woocommerce.php:145
+msgid "Close account"
+msgstr ""
+
+#: unused-template-files/header-woocommerce.php:157
+msgid "Continue shopping"
+msgstr ""
+
+#: unused-template-files/header-woocommerce.php:166
+msgid "Cart"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Full width image"
+msgstr ""
+
+#: unused-template-files/single-full-width-image.php:38
+#: unused-template-files/single-sidebar-left.php:31
+#: unused-template-files/single-sidebar-none.php:28
+msgid " by "
+msgstr ""
+
+#. Template Name of the theme
+msgid "Sidebar left"
+msgstr ""
+
+#. Template Name of the theme
+msgid "No Sidebar"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:112
+msgid "To find out your shipping cost , Please proceed to checkout."
+msgstr ""
+
+#: woocommerce/checkout/form-shipping.php:35
+msgid "Delivery details"
+msgstr ""
+
+#: woocommerce/loop/orderby.php:27
+msgid "Shop order"
+msgstr ""
+
+#: woocommerce/myaccount/my-account-offcanvas.php:17
+msgid "Hello"
+msgstr ""
+
+#: woocommerce/myaccount/my-account-offcanvas.php:22
+msgid "Here you can view your recent orders, manage your shipping and billing addresses, and edit your password and account details."
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:134
+msgid "Your review...*"
+msgstr ""

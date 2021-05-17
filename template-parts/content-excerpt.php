@@ -1,16 +1,3 @@
-<?php
-	/**
-	 * The template for displaying category pages
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-	 *
-	 * @package Bootscore
-	 */
-	
-	get_header();
-    get_template_part('template-parts/header-image');
-	?>
-
 <div id="content" class="site-content container py-5 mt-5">
     <div id="primary" class="content-area">
 
@@ -59,7 +46,7 @@
                                     <?php endif; ?>
                                     <!-- Excerpt & Read more -->
                                     <div class="card-text mt-auto">
-                                        <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
+                                        <?php the_excerpt(); ?> <a class="read-more btn btn-info" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'recipes'); ?></a>
                                     </div>
                                     <!-- Tags -->
                                     <?php bootscore_tags(); ?>
@@ -84,6 +71,3 @@
 
     </div><!-- #primary -->
 </div><!-- #content -->
-
-<?php
-get_footer();

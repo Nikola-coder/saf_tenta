@@ -61,7 +61,7 @@
                                     <?php endif; ?>
                                     <!-- Excerpt & Read more -->
                                     <div class="card-text mt-auto">
-                                        <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'bootscore'); ?></a>
+                                        <?php the_excerpt(); ?> <a class="read-more btn btn-primary" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'recipes'); ?></a>
                                     </div>
                                     <!-- Tags -->
                                     <?php bootscore_tags(); ?>

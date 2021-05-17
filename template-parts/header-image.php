@@ -15,6 +15,9 @@
 		} else if (is_home()) {
 			$title = __('Home','Welcome To Recipes', 'recipes');
 
+		} else if (is_page()) {
+			$title = __('Home','Welcome To Recipes', 'recipes');
+
 		} else if (is_search()) {
 			$title = sprintf(
 				// translators: Search results for query %s

@@ -13,6 +13,7 @@
      */
 
     get_header();
+    get_template_part('template-parts/header-image');
     ?>
 <div id="content" class="site-content container py-5 mt-5">
     <div id="primary" class="content-area">
@@ -22,7 +23,7 @@
 
         <main id="main" class="site-main">
 
-            <header class="entry-header">
+            <header class="entry-header text-center">
                 <?php the_post(); ?>
                 <!-- Title -->
                 <?php the_title('<h1>', '</h1>'); ?>
@@ -30,12 +31,15 @@
                 <?php bootscore_post_thumbnail(); ?>
                 <!-- .entry-header -->
             </header>
+
+            <?php bootscore_recipe_gallery(); ?>
+
             <div class="entry-content">
                 <!-- Content -->
                 <?php the_content(); ?>
                 <!-- .entry-content -->
                 <?php wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'bootscore' ),
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'recipes' ),
 					'after'  => '</div>',
 					) );
 					?>
