@@ -13,6 +13,7 @@
      */
 
     get_header();
+    get_template_part('template-parts/header-image');
     ?>
 <div id="content" class="site-content container py-5 mt-5">
     <div id="primary" class="content-area">
@@ -32,7 +33,7 @@
             </header>
 
             <?php bootscore_recipe_gallery(); ?>
-            
+
             <div class="entry-content">
                 <!-- Content -->
                 <?php the_content(); ?>

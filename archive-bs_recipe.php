@@ -25,7 +25,7 @@
             </div><!-- col -->
 
            <!--  sidebar uncommented -->
-            <!-- <?php get_sidebar(); ?> -->
+            <?php // get_sidebar(); ?>
         </div><!-- row -->
 
     </div><!-- #primary -->
