@@ -23,7 +23,7 @@
 
         <main id="main" class="site-main">
 
-            <header class="entry-header">
+            <header class="entry-header text-center">
                 <?php the_post(); ?>
                 <!-- Title -->
                 <?php the_title('<h1>', '</h1>'); ?>
