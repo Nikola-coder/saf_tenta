@@ -32,15 +32,15 @@ endif;
 // recipes category Badge
 if ( ! function_exists( 'bootscore_recipe_category_badge' ) ) :
 	function bootscore_recipe_category_badge() {
-		// get all movie genres for the current post
+		// get all recipe category for the current post
 		$categories = get_the_terms(get_the_ID(), 'bs_recipe_category');
 
-		// bail if no movie genres exist for this post
+		// bail if no recipe category exist for this post
 		if (!$categories) {
 			return;
 		}
 
-		echo '<div class="movie-genre-badges mb-2">';
+		echo '<div class="mb-2 small">Category: ';
 		$badges = [];
 		
 		// loop over all genres and construct a HTML-link for each of them
@@ -71,15 +71,15 @@ endif;
 // Tags badge start
 if ( ! function_exists( 'bootscore_recipe_tags_badge' ) ) :
 	function bootscore_recipe_tag_badge() {
-		// get all movie genres for the current post
+		// get all recipe tags for the current post
 		$tags = get_the_terms(get_the_ID(), 'bs_recipe_tags');
 
-		// bail if no movie genres exist for this post
+		// bail if no recipe tags exist for this post
 		if (!$tags) {
 			return;
 		}
 
-		echo '<div class="movie-genre-badges mb-2">';
+		echo '<div class=" mt-3 small">Tags: ';
 		$badges = [];
 
 		

@@ -59,8 +59,6 @@ get_header();  ?>
                         </div>
                     </center>
 
-
-
                     <footer class="entry-footer clear-both">
                         <div class="mb-4">
                             <?php bootscore_tags(); ?>

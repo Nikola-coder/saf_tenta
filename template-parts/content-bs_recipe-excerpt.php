@@ -31,9 +31,6 @@
                                     <!--  category tag-->
                                     <?php bootscore_recipe_category_badge(); ?>
 
-                                    <!--  recipe tag-->
-                                    <?php bootscore_recipe_tag_badge(); ?>
-                                    
                                     <!-- Meta -->
                                     <?php if ( 'post' === get_post_type() ) : ?>
                                     <small class="text-muted mb-2">
@@ -49,7 +46,8 @@
                                     <div class="card-text mt-auto">
                                         <?php the_excerpt(); ?> <a class="read-more btn btn-info" href="<?php the_permalink(); ?>"><?php _e('Read more »', 'recipes'); ?></a>
                                     </div>
-                                    <!-- Tags -->
+                                    <!--  recipe tag-->
+                                    <?php bootscore_recipe_tag_badge(); ?>
                                     <?php bootscore_tags(); ?>
                                 </div>
                             </div>
