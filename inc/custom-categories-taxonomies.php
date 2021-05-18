@@ -52,3 +52,4 @@ function cptui_register_my_taxes_bs_recipe_category() {
 	register_taxonomy( "bs_recipe_category", [ "bs_recipe" ], $args );
 }
 add_action( 'init', 'cptui_register_my_taxes_bs_recipe_category' );
+

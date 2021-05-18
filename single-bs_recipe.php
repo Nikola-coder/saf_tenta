@@ -1,9 +1,9 @@
 <?php
-	/*
+/*
 	 * Template Post Type: post
 	 */
-	  
-	 get_header();  ?>
+
+get_header();  ?>
 
 <div id="content" class="site-content container py-5 mt-4">
     <div id="primary" class="content-area">
@@ -26,33 +26,39 @@
                             <?php bootscore_recipe_score_badge(); ?>
 
                             <small class="text-muted">
-                                
+
                                 <?php
-							         bootscore_date();
-							         _e(' by ', 'recipes'); the_author_posts_link();
-							         bootscore_comment_count();							
-							     ?>
-                                 <?php bootscore_recipe_category_badge(); ?>
-                                 <?php bootscore_recipe_tag_badge(); ?>
+                                bootscore_date();
+                                _e(' by ', 'recipes');
+                                the_author_posts_link();
+                                bootscore_comment_count();
+                                ?>
+                                <?php bootscore_recipe_category_badge(); ?>
+                                <?php bootscore_recipe_tag_badge(); ?>
 
 
                             </small>
                         </p>
-                    <div class="entry-content mt-3 mb-3">
-                        <?php the_content(); ?>
-                    </div>
+                        <div class="entry-content mt-3 mb-3">
+                            <?php the_content(); ?>
+                        </div>
                         <?php bootscore_post_thumbnail(); ?>
                         <?php bootscore_bs_servings(); ?>
                     </header>
-                    
+
                     <div>
-                            <?php bootscore_bs_ingredients(); ?>
+                        <?php bootscore_bs_ingredients(); ?>
                     </div>
-                            
 
-                            <?php bootscore_bs_instructions(); ?>
 
+                    <?php bootscore_bs_instructions(); ?>
+
+                    <center>
+                        <div class="flexslider2">
                             <?php bootscore_recipe_gallery(); ?>
+                        </div>
+                    </center>
+
 
 
                     <footer class="entry-footer clear-both">
