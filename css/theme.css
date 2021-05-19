@@ -11052,3 +11052,9 @@ a {
   color: black;
   cursor: pointer;
 }
+
+.special-card {
+  height: 100px;
+  background-color: #d7ebf1;
+  opacity: 0.8;
+}

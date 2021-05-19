@@ -39,10 +39,10 @@ get_header();  ?>
 
                             </small>
                         </p>
-                        <div class="entry-content mt-3 mb-3">
+                        <?php bootscore_post_thumbnail(); ?>
+                        <div class="entry-content mb-3 rounded special-card card-body">
                             <?php the_content(); ?>
                         </div>
-                        <?php bootscore_post_thumbnail(); ?>
                         <?php bootscore_bs_servings(); ?>
                     </header>
 
