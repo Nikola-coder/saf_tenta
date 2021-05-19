@@ -53,10 +53,8 @@ get_header();  ?>
 
                     <?php bootscore_bs_instructions(); ?>
 
-                    <center>
-                        <div class="flexslider2">
+                    <center class="me-5">
                             <?php bootscore_recipe_gallery(); ?>
-                        </div>
                     </center>
 
                     <footer class="entry-footer clear-both">

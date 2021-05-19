@@ -38,7 +38,7 @@
 			class="img-fluid"
 		>
 		<div class="header-text-wrapper">
-			<div class="header-text text-light display-5 mt-5"><?php echo $title; ?></div>
+			<div class="header-text text-light display-5 pt-4 mt-5"><?php echo $title; ?></div>
 		</div>
 	</div>
 <?php endif; ?>

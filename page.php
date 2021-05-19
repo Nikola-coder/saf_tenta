@@ -33,7 +33,7 @@ get_template_part('template-parts/header-image');
                 <!-- .entry-header -->
             </header>
 
-            <center>
+            <center class="flex-viewport">
                 <?php bootscore_recipe_gallery(); ?>
             </center>
 
