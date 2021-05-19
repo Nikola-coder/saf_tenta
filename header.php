@@ -43,8 +43,8 @@
 
                 <div class="container">
 
-                    <a class="navbar-brand" href="/">
-                        <?php mbt_navbar_brand(); ?>
+                    <a class="navbar-brand" href="<?php bloginfo('url'); ?>">
+                        <?php recipe_navbar_brand(); ?>
                     </a>
 
                     <!-- Top Nav Widget -->
