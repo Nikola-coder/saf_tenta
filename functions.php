@@ -129,7 +129,7 @@ add_action('after_setup_theme', 'bootscore_setup');
  *
  * @return void
  */
-function mbt_navbar_brand()
+function recipe_navbar_brand()
 {
     $custom_logo_id = get_theme_mod('custom_logo');
     $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
