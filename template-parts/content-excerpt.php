@@ -20,9 +20,19 @@
                     <?php while (have_posts() ) : the_post(); ?>
                     <div class="card horizontal mb-4">
                         <div class="row">
+
                             <!-- Featured Image-->
+                            <div class="col-md-5">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php the_post_thumbnail('featured-image-thumb', ['class' => 'img-fluid']); ?>
+
+                                            <?php if (has_post_thumbnail())
+
+                                            ?>
+                                        </a>
+                                    </div>
                             <?php if (has_post_thumbnail() )
-							echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
+							
 							?>
                             <div class="col">
                                 <div class="card-body">
@@ -66,7 +76,7 @@
 
             </div><!-- col -->
 
-            <?php get_sidebar(); ?>
+            <?php // get_sidebar(); ?>
         </div><!-- row -->
 
     </div><!-- #primary -->
