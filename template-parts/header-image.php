@@ -1,10 +1,10 @@
 <?php if (get_header_image()) : ?>
 	<?php
 		if (is_category()) {
-			$title = single_cat_title(__('Category: ', 'recipes'), false);
+			$title = single_cat_title(__('', 'recipes'), false);
 
 		} else if (is_tag()) {
-			$title = single_tag_title(__('Tag: ', 'recipes'), false);
+			$title = single_tag_title(__('Tag ', 'recipes'), false);
 
 		} else if (is_post_type_archive()) {
 			$title = post_type_archive_title(__('', 'recipes'), false);
